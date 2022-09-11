@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Laravel Make Generator</title>
+
+    <link rel="stylesheet" href="assets/app.css">
+    <script src="assets/app.js" defer></script>
+</head>
+<body>
+    <label for="modelInput">Model:</label>
+    <input type="text" id="modelInput">
+
+    <div class="card">
+        <input type="checkbox" id="modelCheckbox">
+        <label for="modelCheckbox">Model</label>
+        <br>
+
+        <input type="checkbox" id="controllerCheckbox">
+        <label for="controllerCheckbox">Controller</label>
+        <br>
+
+        <input type="checkbox" id="requestCheckbox">
+        <label for="requestCheckbox">Request</label>
+        <br>
+
+        <input type="checkbox" id="factoryCheckbox">
+        <label for="factoryCheckbox">Factory</label>
+        <br>
+
+        <input type="checkbox" id="testCheckbox">
+        <label for="testCheckbox">Test</label>
+        <br>
+
+        <input type="checkbox" id="migrationCheckbox">
+        <label for="migrationCheckbox">Migration</label>
+        <br>
+
+        <input type="checkbox" id="seederCheckbox">
+        <label for="seederCheckbox">Seeder</label>
+        <br>
+
+        <input type="checkbox" id="serviceCheckbox">
+        <label for="serviceCheckbox">Service</label>
+        <br>
+
+        <input type="checkbox" id="apiCheckbox">
+        <label for="apiCheckbox">API</label>
+    </div>
+
+    <div class="card">
+        <input type="radio" id="cmdShellCheckbox" name="shell" value="cmd">
+        <label for="cmdShellCheckbox">Command Prompt (CMD)</label>
+        <br>
+
+        <input type="radio" id="powershellShellCheckbox" name="shell" value="powershell">
+        <label for="powershellShellCheckbox">PowerShell</label>
+        <br>
+
+        <input type="radio" id="unixShellCheckbox" name="shell" value="bash" checked>
+        <label for="unixShellCheckbox">Bash</label>
+    </div>
+
+    <div class="card">
+        <input type="radio" id="multilineFormatCheckbox" name="format" value="multiline" checked>
+        <label for="multilineFormatCheckbox">Multi-line</label>
+        <br>
+
+        <input type="radio" id="singlelineFormatCheckbox" name="format" value="singleline">
+        <label for="singlelineFormatCheckbox">Single-line</label>
+    </div>
+
+    <pre id="commandContainer"></pre>
+</body>
+</html>
